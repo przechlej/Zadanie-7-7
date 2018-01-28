@@ -22,6 +22,7 @@
      position: absolute;
      top: 286px;
 }
+
  .first-text {
      font-family: Lato;
      color: #ffffff;
@@ -51,16 +52,18 @@
      border: solid 3px #000;
      height: 100%;
      width: 100%;
-     box-sizing: border-box;
+     border-top:none;
 }
  .border-eraser {
-     position: absolute;
+     position: relative;
      top: 0px;
      left: 50%;
-     height: 4px;
-     width: 40%;
+     height: 3px;
      background: #fff;
      transform: translatex(-50%);
+     max-width: 1920px;
+     width:100%;
+   
 }
  .border-eraser h1 {
      font-family: Lato;
@@ -77,7 +80,7 @@
      font-weight: 300;
      line-height: 24px;
      text-align: justify;
-     padding-top: ;
+     padding: 60px;
 }
  .Service {
      width: 100%;
@@ -90,7 +93,10 @@
 }
 
 
-.services {background-image: url(https://i.imgur.com/1Tb9Nn9.png);}
+.services {
+  max-width:1920px;
+  text-align:center;
+}
 
  .services p {
      padding-top:90px;
@@ -155,5 +161,35 @@
      cursor: pointer;
 }
  .footer {
-     background-image: url(https://i.imgur.com/2m6Ge3c.png) background-color: black;
+     background-image: url(https://i.imgur.com/2m6Ge3c.png);
+   background-color: black;
+display: inline-block;
+  padding: 0 15px;
+  position: relative;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+}
+
+h1 span {
+  background: #fff;
+  padding: 0 45px;
+  position: relative;
+  z-index: 1;
+}
+
+h1:before {
+  background: black;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+    top: 50%;
+  width: 103.4%;
+}
+
+h1:before {
+  left: -15px;
 }
